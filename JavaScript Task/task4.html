@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" id="number1"></input>
+<input type="number" id="number2"></input>
+<button onclick="myfunction2()">Calculate Multiple</button>
+<button onclick="myfunction3()">Calculate Divide</button>
+<p id="sum">Your Ans is::</p>
+
+<script>
+
+
+function myfunction2(){
+var a=document.getElementById("number1").value;
+var b=document.getElementById("number2").value;
+var sum= parseInt(a)*parseInt(b);
+document.getElementById("sum").innerHTML = sum;
+}
+function myfunction3(){
+var a=document.getElementById("number1").value;
+var b=document.getElementById("number2").value;
+var sum= parseInt(a)/parseInt(b);
+document.getElementById("sum").innerHTML = sum;
+}
+</script>
+</body>
+</html>
